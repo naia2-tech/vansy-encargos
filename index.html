@@ -319,7 +319,7 @@ main{min-height:calc(100vh - var(--topbar))}
 .shop-nav{display:flex;gap:16px;font-size:12.5px;color:var(--ink-2);overflow:auto;width:100%;justify-content:center;scrollbar-width:none;padding-bottom:2px}
 .shop-nav::-webkit-scrollbar{display:none}
 .shop-nav span{white-space:nowrap}
-.shop-nav span.on{color:var(--ink);font-weight:500}
+.shop-nav span.on{color:var(--ink);font-weight:500;letter-spacing:.04em;text-transform:uppercase;font-size:11.5px}
 .shop-hero{position:relative;height:200px;overflow:hidden;display:flex;align-items:flex-end;padding:16px;background:linear-gradient(160deg,#2f4a3e 0%,#1f332b 60%,#3d2e2a 100%)}
 .shop-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(226,140,80,.35),transparent 45%),radial-gradient(circle at 20% 80%,rgba(120,160,120,.3),transparent 50%)}
 .shop-hero > div{position:relative;color:#fff}
@@ -1275,7 +1275,7 @@ function viewShop(){
   <div class="strip">* Reparto sólo en Donostia San Sebastián y alrededores.</div>
   <div class="shop-head">
     <div class="row1"><span>${ico('fb')}${ico('ig')}</span><img src="${IMG.logo}" alt="Vansy Taller Floral"><span>${ico('search')}${ico('bag')}</span></div>
-    <div class="shop-nav"><span>Inicio</span><span class="on">Tienda</span><span>Galería</span><span>Funerales</span><span>Blog</span><span>Contacto</span></div>
+    <div class="shop-nav"><span class="on">Tienda</span></div>
   </div>
   <div class="shop-hero"><div><p class="eb">Floristería en Donostia San Sebastián</p><h3>Flores que atraen<br>la felicidad</h3><p>Ramos, coronas, iniciales y recuerdos. Cada encargo con sus detalles desde el primer momento.</p></div></div>
   <div class="cats">${CATS.map(c => `<button class="chip ${CLI.cat===c?'on':''}" data-cat="${c}">${c}</button>`).join('')}</div>
