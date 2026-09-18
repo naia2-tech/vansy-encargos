@@ -1277,7 +1277,6 @@ function viewShop(){
     <div class="row1"><span>${ico('fb')}${ico('ig')}</span><img src="${IMG.logo}" alt="Vansy Taller Floral"><span>${ico('search')}${ico('bag')}</span></div>
     <div class="shop-nav"><span class="on">Tienda</span></div>
   </div>
-  <div class="shop-hero"><div><p class="eb">Floristería en Donostia San Sebastián</p><h3>Flores que atraen<br>la felicidad</h3><p>Ramos, coronas, iniciales y recuerdos. Cada encargo con sus detalles desde el primer momento.</p></div></div>
   <div class="cats">${CATS.map(c => `<button class="chip ${CLI.cat===c?'on':''}" data-cat="${c}">${c}</button>`).join('')}</div>
   <div class="grid">${list.map(p => `
     <div class="pcard" data-open="${p.id}">
